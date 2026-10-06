@@ -4,7 +4,7 @@ export default function LinkCard({ link }: { link: LinkItem }) {
   return (
     <a
       href={`/l/${link.id}`}
-      className="flex w-full items-center justify-center rounded-xl border border-gray-200 bg-white px-5 py-4 text-center font-medium text-gray-800 shadow-sm transition hover:border-gray-300 hover:shadow-md active:scale-[0.98]"
+      className="flex w-full items-center justify-center rounded-2xl border border-white/60 bg-white/40 px-5 py-4 text-center font-medium text-foreground shadow-[0_4px_16px_-6px_rgba(196,113,58,0.2)] backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/55 hover:shadow-[0_10px_20px_-8px_rgba(196,113,58,0.3)] active:translate-y-0 active:scale-[0.98]"
     >
       {link.title}
     </a>

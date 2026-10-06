@@ -1,19 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-start: #fff8ef;
+  --background-end: #ffdfc2;
+  --foreground: #4a3f38;
 }
 
 @theme inline {
-  --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-pretendard);
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(
+    160deg,
+    var(--background-start) 0%,
+    #ffecd9 55%,
+    var(--background-end) 100%
+  );
+  background-attachment: fixed;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-pretendard), -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", sans-serif;
 }
